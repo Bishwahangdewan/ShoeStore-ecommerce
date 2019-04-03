@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Montserrat');
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+:root{
+	--primary-color:#0087e0;
+	--font-size:30px;
+	--dark-overlay:rgba(0,0,0,0.4);
+	--font-header:Montserrat;
+	--font-para:Karla;
+	--body-color:#f4f4f4;
+	--grey-color:#868e96;
+}
+
+body{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--font-header);
+}
+
+p{
+  font-family:var(--font-para);
+}
+/*NAVBAR*/
+
+#navbar{
+	border-bottom:3px solid var(--primary-color);
+	background-color: #fff;
+/*	height:75px;
+	z-index:1;*/
+}
+
+#navbar li a{
+	font-family: var(--font-para);
+	font-size:18px;
+}
+
+
+/*SHOWCASE*/
+
+#home-section{
+	position:relative;
+	background:url("/../img/showcase.jpg") no-repeat 100% 95%/cover;
+	min-height:420px;
+	border-bottom:3px solid var(--primary-color);
+}
+
+#home-section .overlay{
+	background-color:var(--dark-overlay);
+	min-height:420px;
+}
+
+
+.home-inner h1{
+	font-family: var(--font-header);
+}
+
+/*CONTENT*/	
+
+.content-cover,.content-cover1,.content-cover2,.content-cover3,.content-cover4,.content-cover5{
+	height:300px;
+	border:2px solid #ddd;
+	box-shadow:1px 1px 1px 3px #ddd;
+}
+
+
+/*--content--*/
+.home-container{
+	width:95%;
+	margin:auto;
+	overflow:hidden;
+}
+
+
+.content-cover{
+	background: url("/../img/content.jpg") no-repeat center center/cover;
+}
+
+.content-cover1{
+	background: url("/../img/content2.jpg") no-repeat center center/cover;
+}
+
+.content-cover2{
+	background: url("/../img/content3.jpg") no-repeat center center/cover;
+}
+
+.content-cover3{
+	background: url("/../img/content4.jpg") no-repeat center center/cover;
+}
+
+.content-cover4{
+	background: url("/../img/content5.jpg") no-repeat center center/cover;
+}
+
+.content{
+	padding:15% 0;
+}
+
+.content2{
+	padding:20% 0;
+	color:#ddd;
+}
+
+.content h1{
+	color:#ddd;
+}
+
+.overlay-content{
+	height:100%;
+	width:100%;
+	background-color:var(--dark-overlay);
+	margin:0;
+	transition:linear 0.2s;
+}
+
+.overlay-content:hover{
+	background-color:rgba(0,0,0,0.3);
+}
+
+#footer{
+	color:#eee;
+}
+
+.footer-p{
+	margin:0;
+}
+
+
